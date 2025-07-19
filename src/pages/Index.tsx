@@ -255,7 +255,7 @@ export default function Index() {
 
                 <div className="border-l-4 border-gray-300 pl-6">
                   <h4 className="text-lg font-semibold text-gray-900">Junior Designer</h4>
-                  <p className="text-gray-500 mb-2">WebStudio • 2018 - 2019</p>
+                  <p className="text-gray-500 mb-2">WebStudio • 2024 - 2025</p>
                   <p className="text-gray-600">Создание веб-интерфейсов, работа с брендингом, изучение UX методологий</p>
                 </div>
               </div>
