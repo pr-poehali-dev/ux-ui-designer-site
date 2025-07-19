@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +98,29 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  /* Custom blue theme colors */
+  .bg-designer-blue {
+    background-color: #2563eb;
+  }
+
+  .text-designer-blue {
+    color: #2563eb;
+  }
+
+  .border-designer-blue {
+    border-color: #2563eb;
+  }
+
+  /* Smooth hover animations */
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
   }
 }
