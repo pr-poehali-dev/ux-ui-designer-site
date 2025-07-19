@@ -425,7 +425,7 @@ export default function Index() {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Icon name="Mail" size={20} className="text-blue-600 mr-4" />
-                    <span>sergey.ivanov@example.com</span>
+                    <span>sergeyivanov1966ivanov@yandex.ru</span>
                   </div>
                   <div className="flex items-center">
                     <Icon name="Phone" size={20} className="text-blue-600 mr-4" />
@@ -433,7 +433,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center">
                     <Icon name="MapPin" size={20} className="text-blue-600 mr-4" />
-                    <span>Москва, Россия</span>
+                    <span>Cаров, Россия</span>
                   </div>
                   <div className="flex items-center">
                     <Icon name="Globe" size={20} className="text-blue-600 mr-4" />
