@@ -209,27 +209,51 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Skills & Resume */}
+      {/* Resume Section */}
       <section id="resume" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Навыки & Опыт</h2>
-            <p className="text-lg text-gray-600">Мои ключевые компетенции</p>
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">РЕЗЮМЕ</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Профессиональный UI/UX дизайнер с 6+ годами опыта создания 
+              цифровых продуктов для стартапов и крупных компаний
+            </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">Профессиональные навыки</h3>
+          {/* Key Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">6+</div>
+              <div className="text-gray-600">Лет опыта</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">85+</div>
+              <div className="text-gray-600">Проектов</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">12</div>
+              <div className="text-gray-600">Наград</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">3</div>
+              <div className="text-gray-600">Страны</div>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-12 mb-20">
+            {/* Skills */}
+            <div className="lg:col-span-1">
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Экспертиза</h3>
               <div className="space-y-6">
                 {skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-2">
-                      <span className="font-medium text-gray-900">{skill.name}</span>
-                      <span className="text-blue-600">{skill.level}%</span>
+                  <div key={skill.name} className="bg-gray-50 p-4 rounded-lg">
+                    <div className="flex justify-between mb-3">
+                      <span className="font-semibold text-gray-900">{skill.name}</span>
+                      <span className="text-blue-600 font-bold">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="w-full bg-gray-200 rounded-full h-3">
                       <div 
-                        className="bg-blue-600 h-2 rounded-full transition-all duration-1000" 
+                        className="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-1000 shadow-sm" 
                         style={{width: `${skill.level}%`}}
                       ></div>
                     </div>
@@ -238,28 +262,150 @@ export default function Index() {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">Опыт работы</h3>
-              <div className="space-y-8">
-                <div className="border-l-4 border-blue-600 pl-6">
-                  <h4 className="text-lg font-semibold text-gray-900"></h4>
-                  <p className="text-blue-600 mb-2"></p>
-                  <p className="text-gray-600"></p>
-                </div>
+            {/* Experience */}
+            <div className="lg:col-span-2">
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Опыт работы</h3>
+              <div className="space-y-10">
+                <Card className="p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start">
+                    <div className="w-4 h-4 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <h4 className="text-xl font-bold text-gray-900">Senior UI/UX Designer</h4>
+                        <Badge className="bg-blue-100 text-blue-800 w-fit">2021 - настоящее время</Badge>
+                      </div>
+                      <p className="text-blue-600 font-medium mb-3">TechCorp • Москва</p>
+                      <ul className="text-gray-600 space-y-2">
+                        <li>• Руководство командой из 4 дизайнеров</li>
+                        <li>• Создание единой дизайн-системы для 8 продуктов</li>
+                        <li>• Увеличение конверсии на 35% через UX оптимизацию</li>
+                        <li>• Проведение 50+ интервью с пользователями</li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
                 
-                <div className="border-l-4 border-gray-300 pl-6">
-                  <h4 className="text-lg font-semibold text-gray-900"></h4>
-                  <p className="text-gray-500 mb-2"></p>
-                  <p className="text-gray-600"></p>
-                </div>
+                <Card className="p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start">
+                    <div className="w-4 h-4 bg-gray-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <h4 className="text-xl font-bold text-gray-900">UI/UX Designer</h4>
+                        <Badge variant="secondary" className="w-fit">2019 - 2021</Badge>
+                      </div>
+                      <p className="text-gray-500 font-medium mb-3">StartupXYZ • Удаленно</p>
+                      <ul className="text-gray-600 space-y-2">
+                        <li>• Дизайн мобильного приложения с 100k+ скачиваний</li>
+                        <li>• Создание прототипов в Figma и Principle</li>
+                        <li>• A/B тестирование интерфейсов</li>
+                        <li>• Работа с продуктовой аналитикой</li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
 
-                <div className="border-l-4 border-gray-300 pl-6">
-                  <h4 className="text-lg font-semibold text-gray-900">Junior Designer</h4>
-                  <p className="text-gray-500 mb-2">WebStudio • 2024 - 2025</p>
-                  <p className="text-gray-600">Создание веб-интерфейсов, работа с брендингом, изучение UX методологий</p>
-                </div>
+                <Card className="p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start">
+                    <div className="w-4 h-4 bg-gray-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <h4 className="text-xl font-bold text-gray-900">Junior Designer</h4>
+                        <Badge variant="secondary" className="w-fit">2018 - 2019</Badge>
+                      </div>
+                      <p className="text-gray-500 font-medium mb-3">WebStudio • Санкт-Петербург</p>
+                      <ul className="text-gray-600 space-y-2">
+                        <li>• Создание лендингов и корпоративных сайтов</li>
+                        <li>• Изучение принципов UX дизайна</li>
+                        <li>• Работа с брендингом и айдентикой</li>
+                        <li>• Освоение Sketch, Figma, Adobe Creative Suite</li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
               </div>
             </div>
+          </div>
+
+          {/* Education & Certifications */}
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Образование</h3>
+              <Card className="p-6">
+                <div className="flex items-center mb-4">
+                  <Icon name="GraduationCap" size={24} className="text-blue-600 mr-3" />
+                  <div>
+                    <h4 className="text-lg font-semibold">Магистратура, Дизайн</h4>
+                    <p className="text-gray-600">СПБГУ • 2016-2018</p>
+                  </div>
+                </div>
+                <p className="text-gray-600">Специализация: Графический и веб-дизайн, UX/UI</p>
+              </Card>
+            </div>
+
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Сертификаты</h3>
+              <div className="space-y-4">
+                <Card className="p-4">
+                  <div className="flex items-center">
+                    <Icon name="Award" size={20} className="text-blue-600 mr-3" />
+                    <div>
+                      <h4 className="font-semibold">Google UX Design Certificate</h4>
+                      <p className="text-sm text-gray-600">2023</p>
+                    </div>
+                  </div>
+                </Card>
+                
+                <Card className="p-4">
+                  <div className="flex items-center">
+                    <Icon name="Award" size={20} className="text-blue-600 mr-3" />
+                    <div>
+                      <h4 className="font-semibold">Adobe Certified Expert</h4>
+                      <p className="text-sm text-gray-600">2022</p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-4">
+                  <div className="flex items-center">
+                    <Icon name="Award" size={20} className="text-blue-600 mr-3" />
+                    <div>
+                      <h4 className="font-semibold">Design Thinking Specialist</h4>
+                      <p className="text-sm text-gray-600">2021</p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+
+          {/* Tools & Technologies */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Инструменты</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+              {[
+                { name: "Figma", icon: "🎨" },
+                { name: "Sketch", icon: "✏️" },
+                { name: "Adobe XD", icon: "🔷" },
+                { name: "Principle", icon: "⚡" },
+                { name: "Framer", icon: "🔥" },
+                { name: "Photoshop", icon: "🖼️" },
+                { name: "Illustrator", icon: "🎭" },
+                { name: "Miro", icon: "🧠" }
+              ].map((tool) => (
+                <Card key={tool.name} className="p-4 text-center hover:shadow-lg transition-shadow hover-scale">
+                  <div className="text-3xl mb-2">{tool.icon}</div>
+                  <div className="font-medium text-sm">{tool.name}</div>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Download Resume Button */}
+          <div className="text-center">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-8 py-4 text-lg">
+              <Icon name="Download" size={24} className="mr-3" />
+              Скачать полное резюме PDF
+            </Button>
           </div>
         </div>
       </section>
