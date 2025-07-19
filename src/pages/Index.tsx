@@ -248,9 +248,9 @@ export default function Index() {
                 </div>
                 
                 <div className="border-l-4 border-gray-300 pl-6">
-                  <h4 className="text-lg font-semibold text-gray-900">UI/UX Designer</h4>
-                  <p className="text-gray-500 mb-2">StartupXYZ • 2024 - 2025</p>
-                  <p className="text-gray-600">Дизайн мобильных приложений, создание прототипов, проведение пользовательского тестирования</p>
+                  <h4 className="text-lg font-semibold text-gray-900"></h4>
+                  <p className="text-gray-500 mb-2"></p>
+                  <p className="text-gray-600"></p>
                 </div>
 
                 <div className="border-l-4 border-gray-300 pl-6">
