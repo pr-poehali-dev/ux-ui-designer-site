@@ -242,9 +242,9 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-gray-900 mb-8">Опыт работы</h3>
               <div className="space-y-8">
                 <div className="border-l-4 border-blue-600 pl-6">
-                  <h4 className="text-lg font-semibold text-gray-900">Senior UI/UX Designer</h4>
-                  <p className="text-blue-600 mb-2">TechCorp • 2021 - настоящее время</p>
-                  <p className="text-gray-600">Ведущий дизайнер продуктовой команды, создание дизайн-системы, проведение UX исследований</p>
+                  <h4 className="text-lg font-semibold text-gray-900"></h4>
+                  <p className="text-blue-600 mb-2"></p>
+                  <p className="text-gray-600"></p>
                 </div>
                 
                 <div className="border-l-4 border-gray-300 pl-6">
